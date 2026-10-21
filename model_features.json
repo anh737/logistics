@@ -1,0 +1,43 @@
+{
+  "model": "Logistic Regression",
+  "features": [
+    "weight_kg",
+    "volume_cm3",
+    "declared_value",
+    "is_business",
+    "distance_km",
+    "n_depot_hops",
+    "historical_delay_rate",
+    "avg_transit_days",
+    "reliability_score",
+    "capacity_utilisation",
+    "weather_sev_origin",
+    "weather_sev_dest",
+    "weather_affected",
+    "weather_both_ends",
+    "weather_max_sev",
+    "month",
+    "is_winter",
+    "day_of_week",
+    "is_weekend",
+    "weight_missing",
+    "value_missing",
+    "volume_to_weight",
+    "log_weight",
+    "log_declared_value",
+    "carrier_route_risk",
+    "promised_days",
+    "transit_slack_days",
+    "km_per_hop",
+    "stretched_carrier",
+    "tier_express",
+    "tier_economy"
+  ],
+  "promise_days": {
+    "express": 1,
+    "standard": 3,
+    "economy": 5
+  },
+  "trained_on": "80% stratified random training split of shipments dated 2024-01-01..2026-06-19; random_state=42",
+  "input_requirement": "Engineered numeric features from Sections 4\u20135; raw-data joins and feature generation are outside this pipeline."
+}
